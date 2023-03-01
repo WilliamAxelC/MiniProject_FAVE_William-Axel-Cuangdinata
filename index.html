@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Finder | Contact Us</title>
+    <script src="validation.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="contact-form">
+        <div class="contact-group">
+            <div class="heading">
+                <h2>Contact Us</h2>
+                <p>Got a question? Send us a message now and we'll reach out to you as soon as possible.</p>
+            </div>
+            <form action="#" class="form" id="form" method="get">
+                
+                <div class="input-group">
+                    <input type="text" name="name" id="name" placeholder="Name" min="3" required>
+                </div>
+                <p id="name_warning" class="error_warning">*Name has to include at least 3 characters</p>
+                
+                <div class="input-group">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <p id="email_warning" class="error_warning">*Email can't be empty and has to include '@' and '.com'</p>
+
+                <div class="input-group">
+                    <textarea name="message" id="message" rows="7" placeholder="Message"></textarea>
+                </div>
+                <p id="message_warning" class="error_warning">*Message has to contain at least 3 words</p>
+                <button type="submit" value="Submit" id="submit">Submit</button>
+                <!-- <input type="submit" value="Submit" id="submit"> -->
+            </form>
+        </div>
+
+    </section>
+</body>
+</html>
