@@ -18,18 +18,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
         if (name.length < 3) {
            errors.push("Name must have a minimum of 3 characters");
             document.getElementById("name_warning").style.display = "block";
+        }else{
+            document.getElementById("name_warning").style.display = "none";
         }
 
         if (email === "" || !email.includes("@") || !email.endsWith(".com")) {
             errors.push("Email must not be empty and should contain '@' and '.com'");
             document.getElementById("email_warning").style.display = "block";
-        }
+        }else{
+            document.getElementById("email_warning").style.display = "none";        }
 
         const wordCount = message.trim().split(/\s+/).length;
         console.log(wordCount);
         if (wordCount < 3) {
             errors.push("Message must have a minimum of 3 words");
             document.getElementById("message_warning").style.display = "block";
+        }else{
+            document.getElementById("message_warning").style.display = "none";
         }
 
         if (errors.length >= 1) {
